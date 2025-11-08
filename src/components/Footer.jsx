@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaXTwitter, FaInstagram } from 'react-icons/fa6';
+import logoImage from '../assets/logo.png';
 import './Footer.css';
 
 const Footer = () => {
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-logo">
-            <img src="/src/assets/logo.png" alt="Logo" className="footer-logo-img" onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }} />
+            <img src={logoImage} alt="Logo" className="footer-logo-img" onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }} />
             <span className="footer-logo-text" style={{display: 'none'}}>University Off-Script.</span>
           </div>
           <p className="footer-brand-text">University Off-Script.</p>

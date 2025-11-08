@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import logoImage from '../assets/logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -61,7 +62,7 @@ const Navbar = () => {
         <div className="navbar-logo">
           {!logoError ? (
             <img 
-              src="/src/assets/logo.png" 
+              src={logoImage} 
               alt="Logo" 
               className="logo-img" 
               onError={() => setLogoError(true)}
