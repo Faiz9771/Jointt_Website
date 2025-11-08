@@ -20,8 +20,20 @@
   width: 100%;
   position: relative;
   z-index: 1;
-  padding-top: 250px;
+  padding-top: 300px;
   text-align: center;
+}
+
+@media (min-width: 1400px) {
+  .hero-container {
+    padding-top: 350px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero-container {
+    padding-top: 400px;
+  }
 }
 
 .mockup-left-wrapper {
@@ -157,12 +169,26 @@
 .hero-title {
   font-size: 5.5rem;
   font-weight: 700;
+  margin-top: 0;
   margin-bottom: 2rem;
   line-height: 1.1;
   letter-spacing: -0.04em;
   backface-visibility: hidden;
   transform-style: preserve-3d;
   will-change: transform, opacity;
+  padding-top: 2rem;
+}
+
+@media (min-width: 1400px) {
+  .hero-title {
+    padding-top: 3rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero-title {
+    padding-top: 4rem;
+  }
 }
 
 .hero-subtitle {
@@ -408,9 +434,13 @@
   }
   
   .hero-container {
-    padding-top: 120px;
+    padding-top: 150px;
     max-width: 100%;
     overflow-x: hidden;
+  }
+  
+  .hero-title {
+    padding-top: 1rem;
   }
   
   .mockup-left-wrapper,
