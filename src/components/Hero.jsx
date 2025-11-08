@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { motion, useInView, useScroll, useTransform, useMotionTemplate } from 'motion/react';
 import { AuroraBackground } from './ui/aurora-background';
 import appStoreLogo from '../assets/appstore.png';
@@ -9,12 +9,18 @@ import mockupImage3 from '../assets/mockups/3.png';
 import './Hero.css';
 
 const Hero = () => {
+  const [isMounted, setIsMounted] = useState(false);
   const heroRef = useRef(null);
   const titleRef = useRef(null);
   const subtitleRef = useRef(null);
   const badgesRef = useRef(null);
   const mockupLeftRef = useRef(null);
   const mockupRightRef = useRef(null);
+  
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const isTitleInView = useInView(titleRef, { once: true, margin: '-50px' });
   const isSubtitleInView = useInView(subtitleRef, { once: true, margin: '-50px' });
   const isBadgesInView = useInView(badgesRef, { once: true, margin: '-50px' });
@@ -24,7 +30,8 @@ const Hero = () => {
   // Scroll-based parallax effects with smooth easing
   const { scrollYProgress } = useScroll({
     target: heroRef,
-    offset: ['start start', 'end start']
+    offset: ['start start', 'end start'],
+    layoutEffect: false
   });
 
   // Smoother parallax with easing curves - using cubic bezier for natural motion
