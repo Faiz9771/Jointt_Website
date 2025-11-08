@@ -1,0 +1,56 @@
+.pricing {
+  padding: 8rem 2rem;
+  background: #000;
+  text-align: center;
+}
+
+.pricing-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pricing-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: white;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.pricing-subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .pricing {
+    padding: 4rem 1.5rem;
+  }
+  
+  .pricing-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .pricing-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing {
+    padding: 3rem 1rem;
+  }
+  
+  .pricing-title {
+    font-size: 1.75rem;
+  }
+  
+  .pricing-subtitle {
+    font-size: 0.9375rem;
+  }
+}
+

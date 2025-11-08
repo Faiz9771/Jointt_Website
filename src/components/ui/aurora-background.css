@@ -1,0 +1,72 @@
+.aurora-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.aurora-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.aurora-gradient {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(at 27% 37%, rgba(254, 99, 60, 0.2) 0px, transparent 0%),
+    radial-gradient(at 97% 21%, rgba(254, 99, 60, 0.15) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, rgba(0, 0, 0, 0.3) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, rgba(254, 99, 60, 0.18) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, rgba(0, 0, 0, 0.25) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, rgba(254, 99, 60, 0.12) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, rgba(0, 0, 0, 0.2) 0px, transparent 50%);
+  background-size: 200% 200%;
+  animation: aurora 15s ease infinite;
+  pointer-events: none;
+}
+
+.aurora-radial-gradient {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    at 50% 50%,
+    rgba(254, 99, 60, 0.08) 0%,
+    transparent 50%
+  );
+  pointer-events: none;
+}
+
+.aurora-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes aurora {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
