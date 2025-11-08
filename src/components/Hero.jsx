@@ -2,7 +2,7 @@ import React from 'react';
 import { AuroraBackground } from './ui/aurora-background';
 import appStoreLogo from '../assets/appstore.png';
 import playStoreLogo from '../assets/playstore.png';
-import mockupImage from '../assets/mockups/1.PNG';
+import mockupImage from '../assets/mockups/1.png';
 import mockupImage2 from '../assets/mockups/2.png';
 import mockupImage3 from '../assets/mockups/3.png';
 import './Hero.css';
