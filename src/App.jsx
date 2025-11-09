@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Stats from './components/Stats';
 import Benefits from './components/Benefits';
 import AdvancedCapabilities from './components/AdvancedCapabilities';
 import Features from './components/Features';
@@ -15,7 +14,6 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      <Stats />
       <Benefits />
       <AdvancedCapabilities />
       <Features />

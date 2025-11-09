@@ -3,12 +3,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #000;
+  background: transparent;
   color: white;
-  padding: 2rem;
+  padding: 80px 2rem 2rem 2rem;
+  margin-top: 100px;
   text-align: center;
   position: relative;
-  overflow-x: visible;
+  z-index: 1;
+  overflow-x: hidden;
   overflow-y: hidden;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -20,19 +22,19 @@
   width: 100%;
   position: relative;
   z-index: 1;
-  padding-top: 350px;
+  padding-top: 0;
   text-align: center;
 }
 
 @media (min-width: 1400px) {
   .hero-container {
-    padding-top: 400px;
+    padding-top: 0;
   }
 }
 
 @media (min-width: 1920px) {
   .hero-container {
-    padding-top: 450px;
+    padding-top: 10px;
   }
 }
 
@@ -176,18 +178,18 @@
   backface-visibility: hidden;
   transform-style: preserve-3d;
   will-change: transform, opacity;
-  padding-top: 4rem;
+  padding-top: 0;
 }
 
 @media (min-width: 1400px) {
   .hero-title {
-    padding-top: 5rem;
+    padding-top: 0;
   }
 }
 
 @media (min-width: 1920px) {
   .hero-title {
-    padding-top: 6rem;
+    padding-top: 0;
   }
 }
 
@@ -417,7 +419,8 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 1rem;
+    padding: 70px 1rem 1rem 1rem;
+    margin-top: 80px;
     min-height: 100vh;
     overflow-x: hidden;
   }
@@ -434,13 +437,13 @@
   }
   
   .hero-container {
-    padding-top: 180px;
+    padding-top: 0;
     max-width: 100%;
     overflow-x: hidden;
   }
   
   .hero-title {
-    padding-top: 1rem;
+    padding-top: 0;
   }
   
   .mockup-left-wrapper,
@@ -519,6 +522,8 @@
 
 @media (max-width: 480px) {
   .hero {
+    padding: 60px 1rem 1rem 1rem;
+    margin-top: 70px;
     overflow-x: hidden;
   }
   
@@ -531,7 +536,7 @@
   }
   
   .hero-container {
-    padding-top: 120px;
+    padding-top: 0;
     overflow-x: hidden;
   }
   

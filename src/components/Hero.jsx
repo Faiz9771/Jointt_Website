@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { motion, useInView, useScroll, useTransform, useMotionTemplate } from 'motion/react';
-import { AuroraBackground } from './ui/aurora-background';
 import appStoreLogo from '../assets/appstore.png';
 import playStoreLogo from '../assets/playstore.png';
 import mockupImage from '../assets/mockups/1.png';
@@ -80,10 +79,9 @@ const Hero = () => {
 
   return (
     <section id="hero" className="hero" ref={heroRef}>
-      <AuroraBackground>
-        <div 
-          className="hero-container"
-        >
+      <div 
+        className="hero-container"
+      >
           <motion.div 
             className="mockup-left-wrapper"
             ref={mockupLeftRef}
@@ -232,7 +230,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </AuroraBackground>
     </section>
   );
 };
