@@ -1,26 +1,21 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Benefits from './components/Benefits';
-import AdvancedCapabilities from './components/AdvancedCapabilities';
-import Features from './components/Features';
-import Pricing from './components/Pricing';
-import FAQ from './components/FAQ';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import StayInTouch from './pages/StayInTouch';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <Benefits />
-      <AdvancedCapabilities />
-      <Features />
-      <Pricing />
-      <FAQ />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/stay-in-touch" element={<StayInTouch />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
