@@ -1,5 +1,8 @@
 import React from 'react';
-import { HiUserGroup, HiGlobeAlt, HiAcademicCap, HiSparkles } from 'react-icons/hi';
+import ConnectWithoutContactOutlinedIcon from '@mui/icons-material/ConnectWithoutContactOutlined';
+import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
+import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
 import mockupImage5 from '../assets/mockups/5.png';
 import './Benefits.css';
 
@@ -8,22 +11,22 @@ const Benefits = () => {
     {
       title: 'Authentic Connections',
       description: 'Build genuine relationships with like-minded individuals.',
-      icon: HiUserGroup
+      icon: ConnectWithoutContactOutlinedIcon
     },
     {
       title: 'Global Reach',
       description: 'Connect with people across 50+ countries effortlessly.',
-      icon: HiGlobeAlt
+      icon: LanguageOutlinedIcon
     },
     {
       title: 'Exclusivity',
       description: 'Just for university students all over the world.',
-      icon: HiAcademicCap
+      icon: SchoolOutlinedIcon
     },
     {
       title: 'Premium Filters',
       description: 'Find your exact tribe, with advance filters for premium users.',
-      icon: HiSparkles
+      icon: FilterAltOutlinedIcon
     }
   ];
 

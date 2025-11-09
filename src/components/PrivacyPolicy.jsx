@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'motion/react';
+import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import CalendarTodayOutlinedIcon from '@mui/icons-material/CalendarTodayOutlined';
 import './PrivacyPolicy.css';
 
 const PrivacyPolicy = () => {
@@ -112,14 +114,14 @@ const PrivacyPolicy = () => {
           transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
           className="privacy-header"
         >
-          <div className="privacy-icon">🔒</div>
+          <div className="privacy-icon"><LockOutlinedIcon /></div>
           <h1 className="privacy-title">Our Privacy Policy</h1>
           <p className="privacy-intro">
             Our Privacy Policy outlines how we collect, use, and protect your personal information. 
             Your privacy and security are our priorities.
           </p>
           <div className="privacy-date">
-            <span className="date-icon">📅</span>
+            <span className="date-icon"><CalendarTodayOutlinedIcon /></span>
             <span>Last Updated on October 24, 2024</span>
           </div>
         </motion.div>

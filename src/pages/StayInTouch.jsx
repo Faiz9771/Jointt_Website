@@ -1,6 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, useInView } from 'motion/react';
 import emailjs from '@emailjs/browser';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import MarkEmailReadOutlinedIcon from '@mui/icons-material/MarkEmailReadOutlined';
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import { emailConfig, formspreeEndpoint } from '../config/emailConfig';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -112,7 +115,7 @@ const StayInTouch = () => {
             transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="stay-in-touch-header"
           >
-            <div className="contact-icon">📧</div>
+            <div className="contact-icon"><EmailOutlinedIcon /></div>
             <h1 className="stay-in-touch-title">Stay In Touch</h1>
             <p className="stay-in-touch-intro">
               Have questions or want to join our waitlist? We'd love to hear from you. 
@@ -194,7 +197,7 @@ const StayInTouch = () => {
 
             <div className="contact-info">
               <div className="contact-info-item">
-                <span className="info-icon">📩</span>
+                <span className="info-icon"><MarkEmailReadOutlinedIcon /></span>
                 <div>
                   <p className="info-label">Email</p>
                   <a href="mailto:jointt.work@gmail.com" className="info-value">
@@ -203,7 +206,7 @@ const StayInTouch = () => {
                 </div>
               </div>
               <div className="contact-info-item">
-                <span className="info-icon">📍</span>
+                <span className="info-icon"><LocationOnOutlinedIcon /></span>
                 <div>
                   <p className="info-label">Location</p>
                   <p className="info-value">Kolkata, West Bengal, India</p>

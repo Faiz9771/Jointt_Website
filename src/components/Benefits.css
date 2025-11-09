@@ -129,7 +129,9 @@
 
 .benefit-icon {
   margin-bottom: 1.5rem;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   line-height: 0;
   width: fit-content;
@@ -139,6 +141,7 @@
   width: 2.5rem;
   height: 2.5rem;
   display: block;
+  fill: currentColor;
 }
 
 .benefit-title {

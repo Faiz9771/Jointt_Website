@@ -16,10 +16,18 @@
 }
 
 .privacy-icon {
-  font-size: 4rem;
   margin-bottom: 1.5rem;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
   animation: float 3s ease-in-out infinite;
+}
+
+.privacy-icon svg {
+  fill: currentColor;
+  width: 4rem;
+  height: 4rem;
 }
 
 @keyframes float {
@@ -62,6 +70,13 @@
 
 .date-icon {
   font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.date-icon svg {
+  fill: currentColor;
 }
 
 .privacy-divider {

@@ -22,22 +22,22 @@ const Footer = () => {
           </div>
         </div>
         {isHomePage && (
-          <div className="footer-nav">
-            <a href="#benefits" className="footer-nav-link">Benefits</a>
-            <span className="footer-dot">•</span>
-            <a href="#features" className="footer-nav-link">Features</a>
-            <span className="footer-dot">•</span>
-            <a href="#pricing" className="footer-nav-link">Pricing</a>
-            <span className="footer-dot">•</span>
-            <a href="#faq" className="footer-nav-link">FAQ's</a>
-            <span className="footer-dot">•</span>
-            <a href="#" className="footer-nav-link">Waitlist</a>
-          </div>
+        <div className="footer-nav">
+          <a href="#benefits" className="footer-nav-link">Benefits</a>
+          <span className="footer-dot">•</span>
+          <a href="#features" className="footer-nav-link">Features</a>
+          <span className="footer-dot">•</span>
+          <a href="#pricing" className="footer-nav-link">Pricing</a>
+          <span className="footer-dot">•</span>
+          <a href="#faq" className="footer-nav-link">FAQ's</a>
+          <span className="footer-dot">•</span>
+          <a href="#" className="footer-nav-link">Waitlist</a>
+        </div>
         )}
         <div className="footer-divider"></div>
         <div className="footer-bottom">
           <div className="footer-social">
-            <a href="#" className="social-icon-button">
+            <a href="https://www.linkedin.com/company/jointt" target="_blank" rel="noopener noreferrer" className="social-icon-button">
               <FaLinkedin />
             </a>
             <a href="#" className="social-icon-button">

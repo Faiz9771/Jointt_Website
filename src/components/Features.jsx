@@ -1,5 +1,10 @@
 import React from 'react';
-import { HiVideoCamera, HiDeviceMobile, HiBadgeCheck, HiCalendar, HiColorSwatch, HiBell } from 'react-icons/hi';
+import VideoCallOutlinedIcon from '@mui/icons-material/VideoCallOutlined';
+import FeedOutlinedIcon from '@mui/icons-material/FeedOutlined';
+import VerifiedOutlinedIcon from '@mui/icons-material/VerifiedOutlined';
+import EventAvailableOutlinedIcon from '@mui/icons-material/EventAvailableOutlined';
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
 import './Features.css';
 
 const Features = () => {
@@ -7,32 +12,32 @@ const Features = () => {
     {
       title: 'Random Video Chats',
       description: 'Meet new people seemlessly and safely from your university and around.',
-      icon: HiVideoCamera
+      icon: VideoCallOutlinedIcon
     },
     {
       title: 'Global & Campus feed.',
       description: 'Seperate Feeds for your own campus and campuses across the world.',
-      icon: HiDeviceMobile
+      icon: FeedOutlinedIcon
     },
     {
       title: 'Verified Users',
       description: 'Connect confidently with verified, authentic users on the platform.',
-      icon: HiBadgeCheck
+      icon: VerifiedOutlinedIcon
     },
     {
       title: 'Exclusive Events',
       description: 'Find all Exclusive Events around you in one hub.',
-      icon: HiCalendar
+      icon: EventAvailableOutlinedIcon
     },
     {
       title: 'Customizable Profiles',
       description: 'Personalize your profile with themes, layouts, and settings.',
-      icon: HiColorSwatch
+      icon: SettingsOutlinedIcon
     },
     {
       title: 'Smart Notifications',
       description: 'Get real-time alerts for the updates that matter to you.',
-      icon: HiBell
+      icon: NotificationsActiveOutlinedIcon
     }
   ];
 
@@ -46,13 +51,16 @@ const Features = () => {
           </p>
         </div>
         <div className="features-grid">
-          {features.map((feature, index) => (
-            <div key={index} className="feature-card">
-              <div className="feature-icon">{React.createElement(feature.icon)}</div>
-              <h3 className="feature-title">{feature.title}</h3>
-              <p className="feature-description">{feature.description}</p>
-            </div>
-          ))}
+          {features.map((feature, index) => {
+            const IconComponent = feature.icon;
+            return (
+              <div key={index} className="feature-card">
+                <div className="feature-icon"><IconComponent /></div>
+                <h3 className="feature-title">{feature.title}</h3>
+                <p className="feature-description">{feature.description}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

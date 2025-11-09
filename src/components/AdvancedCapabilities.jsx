@@ -1,5 +1,7 @@
 import React from 'react';
-import { HiChatAlt2, HiPhone, HiUserCircle } from 'react-icons/hi';
+import MessageOutlinedIcon from '@mui/icons-material/MessageOutlined';
+import SmartToyOutlinedIcon from '@mui/icons-material/SmartToyOutlined';
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import mockupImage4 from '../assets/mockups/4..png';
 import './AdvancedCapabilities.css';
 
@@ -8,17 +10,17 @@ const AdvancedCapabilities = () => {
     {
       title: 'Instant Messaging',
       description: 'Chat seamlessly with friends and communities. ',
-      icon: HiChatAlt2
+      icon: MessageOutlinedIcon
     },
     {
       title: 'Ai Call Assistant',
       description: 'Ai Call Assistance for smoother conversations. ',
-      icon: HiPhone
+      icon: SmartToyOutlinedIcon
     },
     {
       title: 'Customizable Profiles',
       description: 'Personalize your profile with themes and layouts. ',
-      icon: HiUserCircle
+      icon: PersonOutlineOutlinedIcon
     }
   ];
 

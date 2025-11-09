@@ -86,12 +86,12 @@ const Navbar = () => {
           </span>
         </button>
         {isHomePage && (
-          <div className={`navbar-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
-            <a href="#benefits" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>Benefits</a>
-            <a href="#features" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>Features</a>
-            <a href="#pricing" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
-            <a href="#faq" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>FAQ's</a>
-          </div>
+        <div className={`navbar-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
+          <a href="#benefits" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>Benefits</a>
+          <a href="#features" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>Features</a>
+          <a href="#pricing" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
+          <a href="#faq" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>FAQ's</a>
+        </div>
         )}
         <div className={`navbar-cta-wrapper ${mobileMenuOpen ? 'mobile-open' : ''}`}>
           <Link to="/stay-in-touch" className="navbar-cta" onClick={() => setMobileMenuOpen(false)}>
