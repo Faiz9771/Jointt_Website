@@ -9,17 +9,17 @@ const AdvancedCapabilities = () => {
   const capabilities = [
     {
       title: 'Instant Messaging',
-      description: 'Chat seamlessly with friends and communities. ',
+      description: 'Chat seamlessly ',
       icon: MessageOutlinedIcon
     },
     {
       title: 'Ai Call Assistant',
-      description: 'Ai Call Assistance for smoother conversations. ',
+      description: 'AI Call Assistance for smoother conversations. ',
       icon: SmartToyOutlinedIcon
     },
     {
       title: 'Customizable Profiles',
-      description: 'Personalize your profile with themes and layouts. ',
+      description: 'Personalize your profile ',
       icon: PersonOutlineOutlinedIcon
     }
   ];

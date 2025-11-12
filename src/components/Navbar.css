@@ -183,85 +183,51 @@
   }
   
   .navbar-container {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     grid-template-columns: auto 1fr auto;
-    gap: 1rem;
+    gap: 0.75rem;
     position: relative;
   }
   
   .navbar-logo {
     height: 50px;
     margin-left: 0;
+    flex-shrink: 0;
+    max-width: calc(100vw - 8rem);
+    overflow: hidden;
   }
   
   .logo-img {
     height: 50px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  
+  .logo-text {
+    font-size: 0.875rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   .mobile-menu-toggle {
-    display: block;
+    display: none;
   }
   
   .navbar-links {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.95);
-    backdrop-filter: blur(20px);
-    flex-direction: column;
-    padding: 2rem 1.5rem;
-    gap: 1.5rem;
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 999;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  .navbar-links.mobile-open {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .navbar-link {
-    font-size: 1.125rem;
-    width: 100%;
-    text-align: center;
-    padding: 0.75rem 0;
+    display: none;
   }
   
   .navbar-cta-wrapper {
-    position: fixed;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.95);
-    backdrop-filter: blur(20px);
-    padding: 1.5rem;
-    transform: translateY(100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 999;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    justify-content: center;
+    justify-content: flex-end;
     margin-right: 0;
-  }
-  
-  .navbar-cta-wrapper.mobile-open {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
+    flex-shrink: 0;
   }
   
   .navbar-cta {
-    width: 100%;
-    padding: 0.875rem 1.5rem;
-    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    white-space: nowrap;
   }
 }
 
@@ -271,24 +237,28 @@
   }
   
   .navbar-container {
-    padding: 0 1rem;
+    padding: 0 0.75rem;
+    gap: 0.5rem;
   }
   
   .navbar-logo {
     height: 45px;
+    max-width: calc(100vw - 7rem);
   }
   
   .logo-img {
     height: 45px;
+    max-width: 100%;
+    object-fit: contain;
   }
   
-  .navbar-links {
-    top: 60px;
-    padding: 1.5rem 1rem;
+  .logo-text {
+    font-size: 0.75rem;
   }
   
-  .navbar-cta-wrapper {
-    padding: 1.25rem 1rem;
+  .navbar-cta {
+    padding: 0.5rem 0.875rem;
+    font-size: 0.8125rem;
   }
 }
 

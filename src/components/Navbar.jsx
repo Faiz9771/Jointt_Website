@@ -8,7 +8,6 @@ const Navbar = () => {
   const isHomePage = location.pathname === '/';
   const [scrollProgress, setScrollProgress] = useState(0);
   const [logoError, setLogoError] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,29 +26,6 @@ const Navbar = () => {
     handleScroll(); // Initial calculation
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  useEffect(() => {
-    // Lock body scroll when mobile menu is open
-    if (mobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [mobileMenuOpen]);
-
-  useEffect(() => {
-    // Close mobile menu on scroll
-    const handleScroll = () => {
-      if (mobileMenuOpen) {
-        setMobileMenuOpen(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [mobileMenuOpen]);
 
   // Calculate background opacity: starts at 0.1, gradually increases to 0.8 (more transparent)
   const bgOpacity = 0.1 + (scrollProgress * 0.7);
@@ -74,27 +50,16 @@ const Navbar = () => {
             <span className="logo-text">University Off-Script.</span>
           )}
         </Link>
-        <button 
-          className="mobile-menu-toggle"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span className={mobileMenuOpen ? 'hamburger open' : 'hamburger'}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </button>
         {isHomePage && (
-        <div className={`navbar-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
-          <a href="#benefits" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>Benefits</a>
-          <a href="#features" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>Features</a>
-          <a href="#pricing" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
-          <a href="#faq" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>FAQ's</a>
+        <div className="navbar-links">
+          <a href="#benefits" className="navbar-link">Benefits</a>
+          <a href="#features" className="navbar-link">Features</a>
+          <a href="#pricing" className="navbar-link">Pricing</a>
+          <a href="#faq" className="navbar-link">FAQ's</a>
         </div>
         )}
-        <div className={`navbar-cta-wrapper ${mobileMenuOpen ? 'mobile-open' : ''}`}>
-          <Link to="/stay-in-touch" className="navbar-cta" onClick={() => setMobileMenuOpen(false)}>
+        <div className="navbar-cta-wrapper">
+          <Link to="/stay-in-touch" className="navbar-cta">
             Stay In Touch
           </Link>
         </div>
