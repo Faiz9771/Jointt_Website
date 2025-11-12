@@ -47,7 +47,7 @@ const Features = () => {
         <div className="features-header">
           <h2 className="features-title">Discover Jointt Features</h2>
           <p className="features-subtitle">
-            Explore Appit's powerful features designed to help you connect, share, and engage with your community effortlessly.
+            Explore Jointt's powerful features designed to help you connect, share, and engage with your community effortlessly.
           </p>
         </div>
         <div className="features-grid">

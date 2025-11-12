@@ -209,7 +209,7 @@ const StayInTouch = () => {
                 <span className="info-icon"><LocationOnOutlinedIcon /></span>
                 <div>
                   <p className="info-label">Location</p>
-                  <p className="info-value">Kolkata, West Bengal, India</p>
+                  <p className="info-value">Pune, Maharashtra, India</p>
                 </div>
               </div>
             </div>

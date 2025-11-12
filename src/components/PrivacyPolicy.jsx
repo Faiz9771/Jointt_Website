@@ -97,7 +97,7 @@ const PrivacyPolicy = () => {
       content: [
         'For privacy or data-related queries:',
         '📩 jointt.work@gmail.com',
-        '📍 Jointt HQ — Kolkata, West Bengal, India',
+        '📍 Jointt HQ — Pune, Maharashtra, India',
         '',
         'If you have any questions or concerns about our Privacy Policy or the handling of your personal information, please contact us at jointt.work@gmail.com'
       ]
