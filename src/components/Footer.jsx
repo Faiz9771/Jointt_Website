@@ -40,10 +40,10 @@ const Footer = () => {
             <a href="https://www.linkedin.com/company/jointt" target="_blank" rel="noopener noreferrer" className="social-icon-button">
               <FaLinkedin />
             </a>
-            <a href="#" className="social-icon-button">
+            <a href="https://x.com/jointt_official" target="_blank" rel="noopener noreferrer" className="social-icon-button">
               <FaXTwitter />
             </a>
-            <a href="#" className="social-icon-button">
+            <a href="https://www.instagram.com/jointt.official" target="_blank" rel="noopener noreferrer" className="social-icon-button">
               <FaInstagram />
             </a>
           </div>
